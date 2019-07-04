@@ -1,0 +1,18 @@
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript">
+</script>
+</head>
+<body>
+Najedź myszką <br>
+<img src="obr1.jpg" id="obr" width="300" onmouseover='document.getElementById("obr").src="obr2.jpg"' onmouseout='document.getElementById("obr").src="obr1.jpg"'><br><br>
+porusz myszką po obrazku <br>
+<img src="obr3.jpg" id="obr2" width="300" onmousemove="alert('Uwaga!')"><br>
+Kliknij dwa razy, poźniej raz <br><br>
+<img src="obr2.jpg" id="obr3" width="300" ondblclick='document.getElementById("obr3").src="obr4.jpg"' onclick='document.getElementById("obr3").src="obr2.jpg"'><br><br>
+Naciśnij i przytrzymaj później puść:<br>
+<img src="obr5.jpg" id="obr4" width="300" onmousedown='document.getElementById("obr4").src="obr2.jpg"' onmouseup='document.getElementById("obr4").src="obr5.jpg"'><br><br>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript">
+var nr=1;
+function zmien()
+{ if (nr==1)
+	{document.getElementById("odp").innerHTML="Inny";
+	nr=2;}
+else
+	{document.getElementById("odp").innerHTML="Przykładowy tekst";
+	nr=1;}
+
+}
+
+</script>
+</head>
+<body>
+<div id="odp"> Przykładowy tekst</div> <br>
+<input type="button" value="Zmiana" onclick="zmien()">
+
+
+
+</body>
+</html>

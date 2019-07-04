@@ -1,0 +1,21 @@
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript">
+var tekst=1;
+function zmiana()
+{var t=document.getElementsByTagName('p');
+if (t[0].innerHTML=="Tekst na stronie")
+  t[0].innerHTML="Tekst nowy";
+else
+  t[0].innerHTML="Tekst na stronie";
+	
+}
+
+</script>
+</head>
+<body>
+<p>Tekst na stronie</p>
+<input type="button" name="Przycisk" value="KLIK" onclick="zmiana()">
+</body>
+</html>

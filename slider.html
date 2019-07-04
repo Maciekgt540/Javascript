@@ -1,0 +1,24 @@
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript">
+var nr=0;
+var tab=new Array("obr1.jpg","obr2.jpg","obr3.jpg","obr4.jpg","obr5.jpg");
+function zmiana()
+{nr++;
+if (nr>4)
+	nr=0;
+document.getElementById("obrazek").src=tab[nr];
+setTimeout("zmiana()",1300); //wywołuje funkcje zmiana() po 2 sekundach
+}
+
+</script>
+</head>
+<body onload="zmiana()">
+<img src="obr1.jpg" id="obrazek" width="300">
+</body>
+</html>
+
+
+</body>
+</html>

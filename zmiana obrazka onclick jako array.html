@@ -1,0 +1,20 @@
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript">
+var tab=new Array("obr1.jpg","obr2.jpg","obr3.jpg","obr4.jpg","obr5.jpg");
+var nr=0;
+function zmien()
+{nr++;
+if (nr==5)
+	nr=0;
+obraz1.src=tab[nr];
+}
+
+</script>
+</head>
+<body>
+<h2>Klik na obraz, żeby zmienić<h2>
+<img src="obr1.jpg" name="obraz1" width="300" onclick="zmien()">
+</body>
+</html>

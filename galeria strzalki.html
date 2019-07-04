@@ -1,0 +1,28 @@
+<html>
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+body {text-align:center;}
+.strz {width:50px;
+	position:relative;
+	top:-80px;
+	cursor:pointer}
+</style>
+<script type="text/javascript">
+var nr=1;
+function zmiana(kier)
+{if (kier==1&&nr<5)
+	nr++;
+else if (kier==0&&nr>1)
+	nr--;
+document.getElementById("obrazek").src="obr"+nr+".jpg";
+document.getElementById("numerzdj").innerHTML=nr+"/5"
+}
+
+</script>
+</head>
+<body>
+<div id="numerzdj">1/5</div>
+<img src="strzalka.jpg" class="strz" onclick="zmiana(0)"><img src="obr1.jpg" id="obrazek" width="300"><img src="strzalka2.jpg" class="strz" onclick="zmiana(1)">
+</body>
+</html>

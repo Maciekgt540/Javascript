@@ -1,0 +1,23 @@
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript">
+var nr=1;
+function zmiana()
+{nr++;
+if (nr==5	)
+	nr=1;
+obrazek.src="obr"+(nr)+".jpg";
+setTimeout("zmiana()",1000)
+}
+
+</script>
+</head>
+<body onload="zmiana()">
+<img src="obr1.jpg" id="obrazek" width="300">
+</body>
+</html>
+
+
+</body>
+</html>

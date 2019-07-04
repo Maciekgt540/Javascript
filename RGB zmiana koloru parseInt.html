@@ -1,0 +1,32 @@
+﻿<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript">
+function zmien()
+{ var r=parseInt(document.getElementById("czer").value);
+if (isNaN(r)||r>255||r<0)
+r=0;
+  var g=parseInt(document.getElementById("ziel").value);
+
+if (isNaN(g)||g>255||g<0)
+g=0;
+  var b=parseInt(document.getElementById("nieb").value);
+
+if (isNaN(b)||b>255||b<0)
+b=0;
+  document.getElementById("tekst").style.color="rgb("+r+","+g+","+b+")";
+}
+
+
+</script>
+</head>
+<body>
+<p id="tekst"> Zmienia kolor</p>
+Czerwień<input type="text" id="czer"></br>
+Zieleń<input type="text" id="ziel"></br>
+Niebieski<input type="text" id="nieb"></br>
+<button onclick="zmien()">Zmień kolor</button>
+
+
+</body>
+</html>

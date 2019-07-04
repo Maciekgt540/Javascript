@@ -1,0 +1,19 @@
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript">
+var nr=1;
+function zmien()
+{nr++;
+if (nr==8)
+	nr=1;
+obraz1.src="obr"+(nr)+".jpg";
+}
+
+</script>
+</head>
+<body>
+<h2>Klik na obraz, żeby zmienić<h2>
+<img src="obr1.jpg" name="obraz1" width="300" onclick="zmien()">
+</body>
+</html>
